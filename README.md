@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+Aplicación de Comercio Electrónico
+Descripción
+Esta es una aplicación FULLSTACK de comercio electrónico que integra MongoDB, Express, React y Node.js. Permite a los usuarios registrarse, iniciar sesión, explorar productos y realizar pagos en línea utilizando PayPal Sandbox.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Características
+Frontend: Desarrollado en React, utilizando React Router para la navegación, Context API para el manejo del estado, y botones de PayPal para el procesamiento de pagos.
+Backend: Implementado en Node.js con Express, con autenticación de usuarios y almacenamiento en MongoDB.
+Rutas: Incluye las rutas Home, Checkout, Registro de usuario, Inicio de sesión, Mi perfil, Producto individual y Listado de productos.
+Despliegue: Frontend desplegado en Netlify o GitHub Pages, y Backend en Heroku o una plataforma similar.
+Instrucciones de Instalación
+Clonar el Repositorio:
 
-## Available Scripts
+bash
+Copiar código
+git clone https://github.com/JDrakke/proyecto5.git
+Instalar Dependencias del Frontend:
 
-In the project directory, you can run:
+bash
+Copiar código
+cd client
+npm install
+Instalar Dependencias del Backend:
 
-### `npm start`
+bash
+Copiar código
+cd ../server
+npm install
+Iniciar el Backend:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copiar código
+cd server
+node server.js
+Iniciar el Frontend:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copiar código
+cd ../client
+npm start
+Despliegue
+Despliegue del Frontend
+Netlify:
 
-### `npm test`
+Crea una cuenta en Netlify si aún no tienes una.
+Conecta tu repositorio de GitHub y selecciona la carpeta client para el despliegue.
+Configura los ajustes de despliegue y haz clic en "Deploy".
+GitHub Pages:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Asegúrate de que el contenido de la carpeta client/build esté listo para el despliegue.
+Configura la página en GitHub siguiendo estas instrucciones.
+Despliegue del Backend
+Heroku:
+Crea una cuenta en Heroku si aún no tienes una.
 
-### `npm run build`
+Instala la CLI de Heroku y realiza login con heroku login.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navega a la carpeta server y crea una nueva aplicación en Heroku:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copiar código
+cd server
+heroku create
+Despliega tu aplicación a Heroku:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copiar código
+git push heroku master
+Configura las variables de entorno necesarias en el panel de Heroku, como la cadena de conexión a MongoDB.
 
-### `npm run eject`
+Contribuciones
+Si deseas contribuir al desarrollo de esta aplicación, por favor sigue los siguientes pasos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Haz un fork del repositorio.
+Crea una nueva rama para tu característica o corrección de errores.
+Realiza los cambios y haz commit.
+Envía un pull request describiendo tus cambios.
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
